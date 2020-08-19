@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-// const generateMarkdown = require("ugenerateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -54,27 +54,43 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data, err) {
+function writeToFile(fileName, data) {
+  return writeFileAsync(fileName, data);
+}
+
+function askQuestions() {
+  return inquirer.prompt(questions).then((answers) => {
+    generateMarkdown(answers);
+  });
+}
+
+// function to initialize program
+function init() {
   try {
-    writeFileAsync();
+    askQuestions(answers);
+    writeToFile("readme.md", generateMarkdown(answers));
   } catch (err) {
     console.log(err);
   }
 }
 
-// function to initialize program
-function init() {
-  return inquirer.prompt(questions).then((answers) => {
-    console.log(answers);
-  });
-}
-
 init();
-
-writeToFile("readme.md", generateMarkdown(answers));
 
 // Game Plan
 // maybe remove return (try both ways)
 // writeToFile('readme.md', generateMarkdown(answers))
 // write out writetofile
 // finish the
+
+// what happens
+//
+// ask the questions
+// [x] store questions in a constant
+// [ ] when the program inits - inquire.prompt the
+//     questions and then get those answers
+// [ ]
+// put the answers into the template
+// [ ] inside init/inquirer.prompt function to fill in
+//     the template
+// [ ]
+// write the template to the file
