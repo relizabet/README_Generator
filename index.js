@@ -86,9 +86,10 @@ async function init() {
   try {
     // store await askquestions to pass into generateMarkdown
     const answers = await askQuestions();
-
+    // write the file
     writeToFile("readme_0.md", generateMarkdown(answers));
   } catch (err) {
+    // return any errors
     console.log(err);
   }
 }
