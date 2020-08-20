@@ -1,13 +1,10 @@
 # README_Generator
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-  
-  [![GitHub issues](https://img.shields.io/github/issues/relizabet/README_Generator.svg)](https://GitHub.com/relizabet/README_Generator/issues/)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub issues](https://img.shields.io/github/issues/relizabet/README_Generator.svg)](https://GitHub.com/relizabet/README_Generator/issues/)
 
   ## Description
 
-  a;dflja ;ldkjf a;lkdjf aief akldfa eifja dfjak;lds fja;ief a;dkl 
+  A node.js readme generator
 
   ## Table of Contents
   
@@ -20,26 +17,26 @@
   
   ## Installation
 
-  akldjf a;eif a;dklf aiej faldjf aieofa lksd jfa;ieja;lkdfj a
+  Project should be run through your command line
 
   ## Usage
   
-  ajfioaejfkajkdlf jaoiewf ja;lijdf ahdfiuaefajdfaio efj
+  After installing the application answer the prompts 
     
   ## License
   
-  MIT
+  Mozilla Public License 2.0
 
   ## Contributing
   
-  a;efjaeiojfa;kldjf aoiejf al;kdjf aieofja l;kdjfaioejf alkdjfa ;eoiwjf a;lkjdf a;iejfadsijl 
+  Create a branch and submit a pull request to be reviewed
   
   ## Tests
   
-  a;ljfaeiojf akdfaiejfajdfiaej fakjfiaeijaiefjae
+  No tests have been created for this application at this time
 
   ## Questions
   
-  a;lkfjeaeifa klfje aifj eiaiof alkjf aiej falkjefi 
+  Please reach out to me directly via my email address
   - [relizabet](https://github.com/relizabet)
   - For additional questions please email me at: rachel@relizabeth.com
