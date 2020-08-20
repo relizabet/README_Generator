@@ -3,11 +3,11 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   
-  [![GitHub issues](https://img.shields.io/github/issues/relizabet/index.js.svg)](https://GitHub.com/relizabet/undefined/issues/)
+  [![GitHub issues](https://img.shields.io/github/issues/relizabet/README_Generator.svg)](https://GitHub.com/relizabet/README_Generator/issues/)
 
   ## Description
 
-  A node.js readme generator
+  a;dflja ;ldkjf a;lkdjf aief akldfa eifja dfjak;lds fja;ief a;dkl 
 
   ## Table of Contents
   
@@ -20,11 +20,11 @@
   
   ## Installation
 
-  This project must be run via the command line
+  akldjf a;eif a;dklf aiej faldjf aieofa lksd jfa;ieja;lkdfj a
 
   ## Usage
   
-  Navigate to the root folder inside your command line and run 'node index.js'. Answer the questions that are asked.
+  ajfioaejfkajkdlf jaoiewf ja;lijdf ahdfiuaefajdfaio efj
     
   ## License
   
@@ -32,14 +32,14 @@
 
   ## Contributing
   
-  Create a branch and submit a pull request.
+  a;efjaeiojfa;kldjf aoiejf al;kdjf aieofja l;kdjfaioejf alkdjfa ;eoiwjf a;lkjdf a;iejfadsijl 
   
   ## Tests
   
-  No tests have been created for this app at this time
+  a;ljfaeiojf akdfaiejfajdfiaej fakjfiaeijaiefjae
 
   ## Questions
   
-  If you have any questions please reach out to me by email.
+  a;lkfjeaeifa klfje aifj eiaiof alkjf aiej falkjefi 
   - [relizabet](https://github.com/relizabet)
   - For additional questions please email me at: rachel@relizabeth.com
