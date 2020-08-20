@@ -1,11 +1,17 @@
+// require file system to interact with file system 'closely modeled around standard POSIX functions'
 const fs = require("fs");
+// a 'collection of common interactive command line user interfaces'
 const inquirer = require("inquirer");
+// gives me access to promisify the fs.writeFile method
 const util = require("util");
+// gives access to the generate Markdown function located in the separate generateMarkdown file
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// util.promisify 'takes a funciton following the common error-first callback style... and returns a version that returns promises
+// a promise is 'an object representing the eventual completion or failure of an aysnchronous operation'
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// array of questions for user
+// array of questions for  to answer about their readme file
 const questions = [
   {
     type: "input",
@@ -28,16 +34,6 @@ const questions = [
     message: "How is your application used?",
   },
   {
-    type: "input",
-    name: "contributing",
-    message: "How should other developers contribute to your project?",
-  },
-  {
-    type: "input",
-    name: "tests",
-    message: "What tests should be run on this project",
-  },
-  {
     type: "list",
     name: "license",
     message: "Please choose a license:",
@@ -51,6 +47,21 @@ const questions = [
       "GNU General Public License v3.0",
     ],
   },
+  {
+    type: "input",
+    name: "contributing",
+    message: "How should other developers contribute to your project?",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "What tests should be run on this project",
+  },
+  {
+    type: "input",
+    name: "questions",
+    message: "If the user has any questions where should they be directed to?",
+  },
 ];
 
 // function to write README file
@@ -58,9 +69,10 @@ function writeToFile(fileName, data) {
   return writeFileAsync(fileName, data);
 }
 
+//
 function askQuestions() {
   return inquirer.prompt(questions).then((answers) => {
-    generateMarkdown(answers);
+    generateMarkdown();
   });
 }
 
@@ -74,6 +86,7 @@ function init() {
   }
 }
 
+//
 init();
 
 // Game Plan
