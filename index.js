@@ -69,18 +69,17 @@ function writeToFile(fileName, data) {
   return writeFileAsync(fileName, data);
 }
 
-//
+// needs a promise
 function askQuestions() {
-  return inquirer.prompt(questions).then((answers) => {
-    generateMarkdown();
-  });
+  inquirer.prompt(questions);
 }
 
 // function to initialize program
 function init() {
   try {
-    askQuestions(answers);
-    writeToFile("readme.md", generateMarkdown(answers));
+    askQuestions();
+    writeToFile("readme_0.md", generateMarkdown(questions));
+    // console.log(data.title);
   } catch (err) {
     console.log(err);
   }
