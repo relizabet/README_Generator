@@ -15,6 +15,11 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
   {
     type: "input",
+    name: "fileName",
+    message: "What is your projects file name? (e.g. 'index.js')",
+  },
+  {
+    type: "input",
     name: "title",
     message: "What is your projects title?",
   },
@@ -55,7 +60,7 @@ const questions = [
   {
     type: "input",
     name: "tests",
-    message: "What tests should be run on this project",
+    message: "What tests should be run on this project?",
   },
   {
     type: "input",

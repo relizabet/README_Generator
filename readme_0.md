@@ -1,12 +1,13 @@
-# akdlfj
+# README_Generator
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   
+  [![GitHub issues](https://img.shields.io/github/issues/relizabet/index.js.svg)](https://GitHub.com/relizabet/undefined/issues/)
 
   ## Description
 
-  ad;ljk
+  A node.js readme generator
 
   ## Table of Contents
   
@@ -19,11 +20,11 @@
   
   ## Installation
 
-  ajf;dkl
+  This project must be run via the command line
 
   ## Usage
   
-  ad;jfk
+  Navigate to the root folder inside your command line and run 'node index.js'. Answer the questions that are asked.
     
   ## License
   
@@ -31,14 +32,14 @@
 
   ## Contributing
   
-  a;djkf
+  Create a branch and submit a pull request.
   
   ## Tests
   
-  adfklj
+  No tests have been created for this app at this time
 
   ## Questions
   
-  adf;lkj
-  - [afd;lkj](https://github.com/afd;lkj)
-  - For additional questions please email me at: adflkj
+  If you have any questions please reach out to me by email.
+  - [relizabet](https://github.com/relizabet)
+  - For additional questions please email me at: rachel@relizabeth.com
