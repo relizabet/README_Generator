@@ -66,20 +66,28 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  return writeFileAsync(fileName, data);
+  // call writeFileAsync and pass in filename and data parameters to later write the file with fs.writefile
+  writeFileAsync(fileName, data);
 }
 
-// needs a promise
+// function to ask the questions in the terminal
 function askQuestions() {
-  inquirer.prompt(questions);
+  // use inquirer to prompt the questions and (return) the answers
+  return inquirer.prompt(questions);
 }
 
+// https://nodejs.org/api/util.html#util_util_promisify_original
+// async function callStat() {
+//   const stats = await stat('.');
+//   console.log(`This directory is owned by ${stats.uid}`);
+// }
 // function to initialize program
-function init() {
+async function init() {
   try {
-    askQuestions();
-    writeToFile("readme_0.md", generateMarkdown(questions));
-    // console.log(data.title);
+    // store await askquestions to pass into generateMarkdown
+    const answers = await askQuestions();
+
+    writeToFile("readme_0.md", generateMarkdown(answers));
   } catch (err) {
     console.log(err);
   }
@@ -92,17 +100,14 @@ init();
 // maybe remove return (try both ways)
 // writeToFile('readme.md', generateMarkdown(answers))
 // write out writetofile
-// finish the
 
 // what happens
 //
 // ask the questions
 // [x] store questions in a constant
-// [ ] when the program inits - inquire.prompt the
+// [x] when the program inits - inquire.prompt the
 //     questions and then get those answers
-// [ ]
 // put the answers into the template
-// [ ] inside init/inquirer.prompt function to fill in
+// [x] inside init/inquirer.prompt function to fill in
 //     the template
-// [ ]
-// write the template to the file
+// [x] write the template to the file
