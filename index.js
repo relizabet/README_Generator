@@ -62,6 +62,16 @@ const questions = [
     name: "questions",
     message: "If the user has any questions where should they be directed to?",
   },
+  {
+    type: "input",
+    name: "username",
+    message: "What is your github username?",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+  },
 ];
 
 // function to write README file
