@@ -6,6 +6,7 @@ const inquirer = require("inquirer");
 const util = require("util");
 // gives access to the generate Markdown function located in the separate generateMarkdown file
 const generateMarkdown = require("./utils/generateMarkdown");
+const generateLicense = require("./utils/generateLicense");
 
 // util.promisify 'takes a funciton following the common error-first callback style... and returns a version that returns promises
 // a promise is 'an object representing the eventual completion or failure of an aysnchronous operation'
@@ -13,6 +14,11 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for  to answer about their readme file
 const questions = [
+  {
+    type: "input",
+    name: "author",
+    message: "What is your full name?",
+  },
   {
     type: "input",
     name: "title",
@@ -98,6 +104,7 @@ async function init() {
     const answers = await askQuestions();
     // write the file
     writeToFile("readme_0.md", generateMarkdown(answers));
+    writeToFile("LICENSE.md", generateLicense(answers));
   } catch (err) {
     // return any errors
     console.log(err);
