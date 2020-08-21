@@ -3,6 +3,8 @@ function generateMarkdown(data) {
   const license = data.license;
   let licenseBadge;
   let licenseLink;
+  let imgDesc = data.imgDesc;
+  let imgPath = data.imgPath;
 
   if (license === "MIT") {
     licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -52,6 +54,10 @@ function generateMarkdown(data) {
   ## Usage
   
   ${data.usage}
+  ![${imgDesc}](${imgPath})
+  ![${imgDesc}](${imgPath})
+  ![${imgDesc}](${imgPath})
+
     
   ## License
   
