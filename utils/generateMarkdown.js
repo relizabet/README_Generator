@@ -67,7 +67,7 @@ function generateMarkdown(data) {
   
   ${data.contributing}
   
-  ## Tests
+  ## Testing
   
   ${data.tests}
 
