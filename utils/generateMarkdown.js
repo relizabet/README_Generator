@@ -71,7 +71,7 @@ function generateMarkdown(data) {
   
   ${data.tests}
 
-  ## Questions
+  ## Contact
   
   ${data.questions}
   - Github: [${data.username}](https://github.com/${data.username})
