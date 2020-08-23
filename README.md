@@ -50,6 +50,7 @@ THEN I am taken to the corresponding section of the README
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Built With](#built-with)
   - [License](#license)
   - [Contributing](#contributing)
   - [Testing](#testing)
@@ -68,6 +69,11 @@ The user is prompted with a series of questions used to fill out the README temp
 ![Image Description](./assets/questions.png)
 
 ![Image Description](./assets/license.png)
+
+## Built With
+
+- JavaScript
+- Node.js
 
 ## License
 
